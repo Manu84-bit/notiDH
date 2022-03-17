@@ -24,11 +24,13 @@ ul {
 li {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    font-size: 1.5rem;
     margin-right: 6rem;
 }
 
 li:hover {
-    color: blueviolet;
+    color: #219F94;
+    /* color: blueviolet; */
     cursor:pointer;
 }
 
@@ -131,6 +133,8 @@ hr {
 
 li {
     margin-right: 1rem;
+    font-size: 0.8rem;
+
 }
     
 }
