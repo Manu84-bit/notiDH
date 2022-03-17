@@ -1,7 +1,8 @@
 * { box-sizing: border-box; padding: 0; margin: 0; border: 0;}
 
 header {
-    background-color: white
+    background-color: white;
+    width: 100vw;
 }
 
 body {
@@ -44,7 +45,7 @@ footer {
 .tarjeta{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:start;
     padding-block: 2rem;
     padding-inline: 10rem;
     margin-left: 2rem;
@@ -58,7 +59,7 @@ footer {
 }
 
 .tarjeta div {
-    margin-left: 2rem;
+    margin-left: 1rem;
     padding-right: 10rem;
     display: flex;
     flex-direction: column;
@@ -69,3 +70,54 @@ footer {
     color: rgb(153, 6, 6);
     font-weight: bold;
 }
+
+.blue-nal {
+ background:#d0d9e2;
+}
+
+.gray-inter {
+ background:#d1d1d4;
+}
+
+@media (max-width: 1020px) {
+
+    ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+    
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    margin-left: 1rem;
+
+}
+
+.tarjeta img {
+    width: 280px;
+    height: 200px;
+    padding-left: 1rem;
+}
+
+.tarjeta div {
+    margin-top: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+
+}
+
+li {
+    margin-right: 1rem;
+}
+    
+}
+

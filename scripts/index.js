@@ -77,7 +77,9 @@ window.onload = () => {
    nacionales.addEventListener('click', ()=>{
        container.innerHTML = ''
        let notiNal = noticias.filter(n => n.tipoNacional)
-         showNews(notiNal);
+        showNews(notiNal);
+        container.classList.remove("gray-inter");
+        container.classList.add("blue-nal")
       
    })
 
@@ -85,12 +87,16 @@ window.onload = () => {
        container.innerHTML = ''
        let notiInterNal = noticias.filter(n => !n.tipoNacional)
          showNews(notiInterNal);
+         container.classList.remove("blue-nal");
+         container.classList.add("gray-inter");
       
    })
 
    allNews.addEventListener('click', ()=>{
        container.innerHTML = "";
-         showNews(noticias);
+        container.classList.remove("gray-inter");
+        container.classList.remove("blue-nal");
+        showNews(noticias);
          
       
    })
