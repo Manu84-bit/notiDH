@@ -72,6 +72,7 @@ window.onload = () => {
 
   let nacionales = document.getElementById("nal");
   let internacionales = document.getElementById("inal");
+  let allNews = document.getElementById("allNews");
 
    nacionales.addEventListener('click', ()=>{
        container.innerHTML = ''
@@ -82,8 +83,15 @@ window.onload = () => {
 
    internacionales.addEventListener('click', ()=>{
        container.innerHTML = ''
-       let notiNal = noticias.filter(n => !n.tipoNacional)
-         showNews(notiNal);
+       let notiInterNal = noticias.filter(n => !n.tipoNacional)
+         showNews(notiInterNal);
+      
+   })
+
+   allNews.addEventListener('click', ()=>{
+       container.innerHTML = "";
+         showNews(noticias);
+         
       
    })
 
