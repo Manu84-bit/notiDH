@@ -64,6 +64,8 @@ window.onload = () => {
                 <p>${element.descripcion}</p>
             </div>
         </div>
+       <hr>
+        
         `;
     }
   }
